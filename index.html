@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kırmızı Çiğköfte - Online Menü</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="logo.png" alt="Kırmızı Çiğköfte Logo" class="logo">
+                <h1 class="brand-name">KIRMIZI ÇIĞKÖFTE</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Navigation -->
+    <nav class="categories-nav">
+        <div class="nav-container">
+            <button class="category-btn active" data-category="all">
+                <i class="fas fa-th"></i> Tümü
+            </button>
+            <div id="category-buttons" class="category-buttons"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="menu-container">
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be loaded here dynamically -->
+        </div>
+    </main>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Menü yükleniyor...</p>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Ürün" class="modal-image">
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-category" class="modal-category"></p>
+                    <p id="modal-description" class="modal-description"></p>
+                    <div class="modal-price">
+                        <span id="modal-price" class="price"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
